@@ -1,0 +1,132 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+  
+html,body{
+    height: 100%;
+    width: 100%;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+}
+
+
+.main{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.leftPart{
+    height: 60%;
+    width: 40%;
+    font-size: 2rem;
+    padding: 3rem ;
+}
+
+.rightPart{
+    height: 60%;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    padding-top: 3rem;
+    padding-right: 5px;
+}
+
+.topYellowLine{
+    width: 100%;
+    height: 15%;
+    background-color: yellowgreen;
+    display: flex;
+    align-items: center;
+    letter-spacing: .5rem;
+    font-weight: 100;
+
+}
+
+
+.middlePercent{
+    width: 100%;
+    height: 45%;
+    display: flex;
+}
+
+.middlePercent .one{
+    width: 50%;
+    height: 100%;
+
+}
+
+.one h1{
+    font-size: 6rem;
+}
+
+.one p{
+    font-size: 1.3rem;
+}
+
+.bottomBtn{
+    width: 100%;
+    height: 40%;
+
+}
+
+.bottomBtn p{
+    height: 40%;
+    font-size: 1rem;
+    color: rgb(64, 126, 126);
+    font-weight: 400;
+}
+
+.bottomBtn button{
+    border-radius: 30px;
+    border: 2px solid black;
+    padding: 1rem 2rem;
+    color: black;
+}
+
+
+@media only screen and (max-width: 480px){
+    .main{
+        flex-direction: column;
+    }
+
+    .leftPart{
+        height: 30%;
+        width: 100%;
+    }
+
+    .rightPart{
+        height: 70%;
+        width: 100%;
+        flex-direction: column;
+        padding-top: 0px;
+        padding-right: 0px;
+    }
+
+    .topYellowLine{
+        height: 10%;
+        justify-content: center;
+    }
+
+    .middlePercent{
+        width: 100%;
+        height: 45%;
+        padding: 20px;
+        flex-direction: column;
+    }
+
+    .middlePercent .one{
+        width: 100%;
+    
+    }
+
+    .bottomBtn{
+        width: 100%;
+        height: 40%;
+        padding: 20px;
+    }
+
+}
